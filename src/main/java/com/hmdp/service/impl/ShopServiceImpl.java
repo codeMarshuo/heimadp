@@ -42,6 +42,7 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         //命中是否是空值
         if(shopJson!=null){
             return Result.fail("店铺信息不存在");
+
         }
 
         //不存在则查询数据库并存入缓存
